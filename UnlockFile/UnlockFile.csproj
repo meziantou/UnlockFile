@@ -4,7 +4,9 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <PackAsTool>true</PackAsTool>
-    <ToolCommandName>UnlockFile</ToolCommandName>    
+    <ToolCommandName>UnlockFile</ToolCommandName>
+    <Description>UnlockFile allows to unlock a file by shutting down the applications that lock the file.</Description>
+    <Version>1.0.1</Version>    
   </PropertyGroup>
 
   <ItemGroup>
