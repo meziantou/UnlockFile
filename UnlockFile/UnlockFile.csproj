@@ -6,11 +6,15 @@
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>UnlockFile</ToolCommandName>
     <Description>UnlockFile allows to unlock a file by shutting down the applications that lock the file.</Description>
-    <Version>1.0.1</Version>    
+    <Version>1.1.0</Version>    
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Meziantou.Framework.CommandLine" Version="2.1.0" />
+    <PackageReference Include="Meziantou.Framework.Win32.AccessToken" Version="1.0.0" />
     <PackageReference Include="Meziantou.Framework.Win32.RestartManager" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.CommandLineUtils" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="2.0.0-rc1" />
   </ItemGroup>
 
 </Project>
