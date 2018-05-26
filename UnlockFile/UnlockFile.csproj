@@ -6,7 +6,7 @@
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>UnlockFile</ToolCommandName>
     <Description>UnlockFile allows to unlock a file by shutting down the applications that lock the file.</Description>
-    <Version>1.1.0</Version>    
+    <Version>1.2.0</Version>    
   </PropertyGroup>
 
   <ItemGroup>

@@ -143,6 +143,7 @@ namespace UnlockFile
         {
             app.Command("RegisterShellMenu", cmd =>
             {
+                var pause = cmd.Option("--pause", "Wait for user input to close the process", CommandOptionType.NoValue);
                 var runAsAdmin = cmd.Option("--run-as-admin", "Run UnlockFile as administrator", CommandOptionType.NoValue);
                 cmd.HelpOption(Help);
 
@@ -158,6 +159,11 @@ namespace UnlockFile
                             if (runAsAdmin.HasValue())
                             {
                                 value += " --run-as-admin";
+                            }
+
+                            if (pause.HasValue())
+                            {
+                                value += " --pause";
                             }
 
                             reg.SetValue("", value);
