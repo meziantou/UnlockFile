@@ -166,7 +166,7 @@ namespace UnlockFile
                                 value += " --pause";
                             }
 
-                            reg.SetValue("", value);
+                            command.SetValue("", value);
                         }
                     }
 
