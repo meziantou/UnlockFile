@@ -133,7 +133,7 @@ namespace UnlockFile
                 cmd.HelpOption(Help);
                 cmd.OnExecute(() =>
                 {
-                    Registry.CurrentUser.DeleteSubKeyTree("Software\\Classes\\*\\UnlockFile", throwOnMissingSubKey: false);
+                    Registry.CurrentUser.DeleteSubKeyTree("Software\\Classes\\*\\shell\\UnlockFile", throwOnMissingSubKey: false);
                     return 0;
                 });
             });
@@ -149,7 +149,7 @@ namespace UnlockFile
 
                 cmd.OnExecute(() =>
                 {
-                    using (var reg = Registry.CurrentUser.CreateSubKey("Software\\Classes\\*\\UnlockFile", writable: true))
+                    using (var reg = Registry.CurrentUser.CreateSubKey("Software\\Classes\\*\\shell\\UnlockFile", writable: true))
                     {
                         reg.SetValue("", "Unlock File");
 
