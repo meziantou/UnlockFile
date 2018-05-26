@@ -155,7 +155,7 @@ namespace UnlockFile
 
                         using (var command = reg.CreateSubKey("command"))
                         {
-                            var value = "UnlockFile \"%1\"";
+                            var value = $"\"{Process.GetCurrentProcess().MainModule.FileName}\" \"%1\"";
                             if (runAsAdmin.HasValue())
                             {
                                 value += " --run-as-admin";
