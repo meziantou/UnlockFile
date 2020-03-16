@@ -10,7 +10,7 @@
   <ItemGroup>
     <PackageReference Include="Meziantou.Framework.Win32.AccessToken" Version="1.1.5" />
     <PackageReference Include="Meziantou.Framework.Win32.RestartManager" Version="1.0.3" />
-    <PackageReference Include="System.Management" Version="4.5.0" />
+    <PackageReference Include="System.Management" Version="4.7.0" />
   </ItemGroup>
 
 </Project>
